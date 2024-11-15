@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my dolar</title>
+</head>
+
+<body>
+    <img src="./my-dolar.gif">
+    <h1>my dolars</h1>
+    
+    <div>
+        <input id="inputreal" type="number" placeholder="valor em reais">
+        <input id="inputdolar" placeholder="valor do dolar">
+        <p>$ 0</p>
+        <button onclick="calculadolar()">Converter</button>
+        </div>
+</body>   
+    <style>
+        body {
+            text-align: center;
+            background-color: #323232;
+        }
+
+        img {
+            width: 70%;
+        }
+            
+        h1 {
+            color:#cfff00;
+            font-size: 50px;
+        }
+
+        input {
+            width: 140px;
+            height: 38px;
+        }
+
+        #inputreal {
+            border: 3px solid #cfff00;
+        }
+
+
+        #inputdolar {
+            border: 3px solid red;
+        }
+
+        p {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        button {
+            height: 40px;
+            width: 150px;
+            font-size: 20px;
+            cursor: pointer;
+            border: 3px solid #cfff00;
+            border-radius: 10px;
+            background-color: #323232;
+            color: white;
+        }
+
+        button:hover {
+            color: #323232;
+            background-color: #cfff00;
+        }
+
+    </style>
+
+    <script>
+        
+        function calculadolar(){
+           let real = document.getElementById('inputreal').value
+        let dolar = document.getElementById('inputdolar').value
+
+        let resultado = real / dolar
+        
+        alert(resultado) 
+        }
+
+        
+
+    </script>
+
+
+</html>
